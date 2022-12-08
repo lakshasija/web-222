@@ -1,0 +1,223 @@
+<!-- 
+    Name: 
+    Student Number: 
+    Email: 
+    Section: 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laksh Asija || WEB222 Final Project</title>
+
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./Assets/styles.css">
+
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="website">
+        <!-- Navbar -->
+        <header class="navbar">
+            <nav>
+                <div class="nav-menu">
+                    <div class="menu">
+                        <ul class="nav-links">
+                            <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">ABOUT ME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#education">EDUCATION</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Menu Icon -->
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content of the Webpage -->
+        <main class="main">
+            <!-- Homepage -->
+            <section class="home" id="home">
+                <div class="home-content">
+                    <div class="home-img">
+                        <a href="index.html"><img src="./Assets/Images/profile.jpg" alt="home-img"></a>
+                    </div>
+                    <div class="home-text">
+
+                        <h2>I'm <span class="color">Laksh Asija</span></h2>
+                        <p>I am an international student from india and am Pursuing  Diploma in Computer
+                            Programming at Seneca College</p>
+                    </div>
+                    <div class="home-btns">
+                        <a download="laksh resume.pdf" href="./Assets/Files/laksh resume.pdf"><button
+                                class="btn"><i class="uil uil-import"></i>Resume</button></a>
+                        <a href="#contact"><button class="btn">Contact Me</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about" id="about">
+                <h2 class="heading">ABOUT ME</h2>
+                <div class="about-content">
+                    <div class="about-details">
+                        <span class="abt-span">Basic Information</span>
+                        <pre><strong>AGE:</strong>              19</pre>
+                        <pre><strong>EMAIL:</strong>            lakshasija2003@gmail.com</pre>
+                        <pre><strong>LANGUAGE:</strong>         English</pre>
+                        <pre><strong>CLASS SECTION:</strong>    CPP</pre>
+                        <pre><strong>STUDENT ID:</strong>       164961211</pre>
+                        <pre><strong>INSTRUCTOR:</strong>       Proffesor David Humphrey</pre>
+                    </div>
+                    </div><p>I am a student studying at seneca college and am currently living my parent's dream to study abroad, I was have always keen to know about how websites
+                        are made and how they function. So after some research I took this where I knew we will be learning web in my second semester apart from my interest in web
+                        development, I have been following a lot sports. 
+                     </p>
+                    <div class="about-text">
+                        <span class="abt-span">About Me and Academic Honesty</span>
+                        <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
+                            No part of this assessment has been copied manually or electronically from any other source
+                            (including web sites) except for the information supplied by the WEB222 instructors and / or
+                            made available in this assessment for my use. I also declare that no part of this assignment
+                            has been distributed to other students.</p>
+                        <span><strong>Date: </strong></span>
+                        <p>DEC 4, 2022</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="education" id="education">
+                <h2 class="heading edu">EDUCATION</h2>
+                <div class="card">
+                    <div class="left"><br>
+                        <p>2022-2024(expected)</p>
+                        <h2>Diploma in Computer
+                            Programminge</h3>
+                    </div>
+                    <div class="right">
+                        <h2>Diploma in Computer
+                            Programming</h2>
+                        <h3>SENECA COLLEGE</h3>
+                        <p style="display: inline-block;">Under the supervision of </p>
+                        <p style="display: inline-block;color: rgb(103, 193, 109);">Proffesor David Humphrey.</p>
+                        <p>Awarded with all scholarships in the world.</p>
+                    </div>
+                </div>
+                <br>
+                
+            </section>
+
+            <!-- Form Section -->
+            <section class="contact" id="contact">
+                <h2 class="heading">CONTACT ME</h2>
+                <div class="contact-content">
+                    <form action="https://httpbin.org/post" class="contact-form" id="contact-form" method="POST">
+                        <!-- Name -->
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="name format">
+
+                        <!-- Email -->
+                        <label for="email">Email:</label>
+                        <!-- email type wasnt used because form is validated using js so it wasn't needed -->
+                        <input type="text" name="email" id="email" placeholder="Email address..." class="email format">
+
+                        <!-- Address -->
+                        <label for="address">Current Address:</label>
+                        <textarea name="address" id="address" cols="30" rows="2" placeholder="Enter your full address"
+                            class="address"></textarea>
+
+                        <!-- Datalist for cities in Canada -->
+                        <label for="name">City:</label>
+                        <input class="format" type="text" id="city" name="city" list="suggestions"
+                            placeholder="Enter your City" />
+                        <datalist id="suggestions">
+                            <option label="Barrie" value="Barrie"></option>
+                            <option label="Calgary" value="Calgary"></option>
+                            <option label="Charlottetown" value="Charlottetown"></option>
+                            <option label="Chibougamau" value="Chibougamau"></option>
+                            <option label="Chilliwack" value="Chilliwack"></option>
+                            <option label="Cold Lake" value="Cold Lake"></option>
+                            <option label="Dorval" value="Dorval"></option>
+                            <option label="Edmonton" value="Edmonton"></option>
+                            <option label="Flin Flon" value="Flin Flon"></option>
+                            <option label="Hamilton" value="Hamilton"></option>
+                            <option label="Iqualuit" value="Iqualuit"></option>
+                            <option label="Ottawa" value="Ottawa"></option>
+                            <option label="Miramichi" value="Miramichi"></option>
+                            <option label="Montreal" value="Montreal"></option>
+                            <option label="Red Deer" value="Red Deer"></option>
+                            <option label="Scarborough" value="Scarborough"></option>
+                            <option label="St. John" value="St. John"></option>
+                            <option label="St. John's" value="St. John's"></option>
+                            <option label="Toronto" value="Toronto"></option>
+                            <option label="Vancouver" value="Vancouver"></option>
+                            <option label="Whitehorse" value="Whitehorse"></option>
+                            <option label="Winnipeg" value="Winnipeg"></option>
+                            <option label="Yellowknife" value="Yellowknife"></option>
+                        </datalist>
+
+                        <!-- Postal Code -->
+                        <label for="pCode">Postal Code:</label>
+                        <input name="Postal_Code" type="text" id="pCode" class="format" placeholder="Postal Code">
+
+                        <!-- Purpose of this message -->
+                        <br>
+                        <div class="radio-btns">
+                            <label for="purpose">What is the purpose of this message?</label><br><br>
+                            <input type="radio" id="question" name="purpose" value="question">
+                            <label for="question">Question</label><br>
+                            <input type="radio" id="comment" name="purpose" value="comment">
+                            <label for="comment">Comment</label><br>
+                            <input type="radio" id="hiring" name="purpose" value="hiring">
+                            <label for="hiring">Hiring</label>
+                        </div>
+                        <br>
+
+                        <!-- Message -->
+                        <label for="message">Message for me:</label>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message..."
+                            class="address"></textarea>
+
+
+
+                        <!-- Buttons -->
+                        <div class="form-btns">
+                            <input type="submit" value="Send" class="btn">
+                            <input type="reset" value="Clear" class="btn">
+                        </div>
+                        <div id="error"></div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Webpage Footer -->
+        <footer class="footer">
+            
+        </footer>
+
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="./Assets/script.js"></script>
+</body>
+
+</html>
